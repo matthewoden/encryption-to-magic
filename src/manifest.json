@@ -1,0 +1,18 @@
+{
+	"manifest_version": 2,
+
+	"name": "Encryption to Magic",
+	"description": "Replaces the text 'Encryption' with 'Magic'.",
+	"author": "Matthew Potter",
+	"version": "1.7",
+
+	"content_scripts":
+	[
+		{
+			"matches": ["*://*/*"],
+			"all_frames": true,
+			"js": ["content_script.js"],
+			"run_at": "document_end"
+		}
+	]
+}
